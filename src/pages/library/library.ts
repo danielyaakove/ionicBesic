@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { Category } from '../../data/category.interface';
 import quotes from '../../data/quotes';
+import { Quotes } from '../quotes/quotes';
 
 @IonicPage()
 @Component({
@@ -10,6 +11,7 @@ import quotes from '../../data/quotes';
 })
 export class Library implements OnInit {
   quoteCollection: Array<Category>;
+  quotesPage = Quotes;
 
   ngOnInit() {
     this.quoteCollection = quotes;
