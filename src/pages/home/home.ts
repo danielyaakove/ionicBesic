@@ -7,12 +7,16 @@ import { Users } from '../users/users';
   templateUrl: 'home.html'
 })
 export class HomePage {
+  userPage = Users
 
   constructor(public navCtrl: NavController) {
 
   }
 
   goToUsers() {
-    this.navCtrl.push(Users);
+    this.navCtrl.push(Users).catch(function (error) {
+      console.log(error);
+    }
+    );
   }
 }

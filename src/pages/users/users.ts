@@ -19,8 +19,14 @@ export class Users {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad Users');
+
   }
 
+  ionViewCanEnter(): boolean | Promise<boolean> {
+    console.log('ionViewCanEnter Users');
+    const rn = Math.random();
+    return rn > 0.5;
+  }
   onLoadUser(name: string) {
     this.navCtrl.push(UserPage, { userName: name });
   }
