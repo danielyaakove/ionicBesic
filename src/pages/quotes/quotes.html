@@ -1,17 +1,24 @@
-
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{quotesCategory.category}}</ion-title>
+    <ion-title>{{quotesCategory?.category| uppercase}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-<ion-list >
-  <ion-item *ngFor="let quote of quotesCategory.quotes" >
-    {{quote.text}}
-  </ion-item>
-</ion-list>
+  <ion-card *ngFor="let quote of quotesCategory.quotes;let i = index">
+    <ion-card-header>#{{i+1}}</ion-card-header>
+    <ion-card-content>
+      <p> {{quote.text}}</p>
+      <p> {{quote.person}}</p>
+    </ion-card-content>
+
+    <ion-row>
+      <ion-col text-right>
+        <button ion-button clear small  (click)="onAddToFavorite(quote)">Favorite</button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
 </ion-content>
