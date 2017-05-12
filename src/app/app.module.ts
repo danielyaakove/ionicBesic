@@ -10,7 +10,7 @@ import { MyApp } from './app.component';
 import { Favorites } from '../pages/favorites/favorites';
 import { Library } from '../pages/library/library';
 import { QuotePage } from '../pages/quote/quote';
-import { Settings } from '../pages/settings/settings';
+import { SettingsPage } from '../pages/settings/settings';
 import { Quotes } from '../pages/quotes/quotes';
 import { Tabs } from '../pages/tabs/tabs';
 
@@ -20,7 +20,7 @@ import { Tabs } from '../pages/tabs/tabs';
     Favorites,
     Library,
     QuotePage,
-    Settings,
+    SettingsPage,
     Quotes,
     Tabs
   ],
@@ -34,7 +34,7 @@ import { Tabs } from '../pages/tabs/tabs';
     Favorites,
     Library,
     QuotePage,
-    Settings,
+    SettingsPage,
     Quotes,
     Tabs
 

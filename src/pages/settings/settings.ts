@@ -8,7 +8,7 @@ import { IonicPage, Toggle } from 'ionic-angular';
   selector: 'page-settings',
   templateUrl: 'settings.html',
 })
-export class Settings {
+export class SettingsPage {
 
   constructor(private settingsService: SettingsService) {}
 
